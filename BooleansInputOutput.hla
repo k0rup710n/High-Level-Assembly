@@ -1,0 +1,19 @@
+program DemoVars;
+#include("stdlib.hhf");
+static
+    InitDemo:   int32:=5;
+    NonInitialized: int32;
+    // Boolean Initialization
+    BoolVar: boolean;
+    HasClass: boolean := false;
+    IsClear: boolean := true;
+begin DemoVars;
+    // Display the value of the pre-initialized variable:
+    stdout.put("InitDemo's value is ", InitDemo, nl);
+    // Input an integer value from the user and display that value:
+    stdout.put("Enter an integer value : ");
+    stdin.get(NonInitialized);
+    stdout.put("You entered: ", NonInitialized, nl);
+    stdout.put("[----------------------------------]", nl, "Time to play with booleans", nl);
+    stdout.put("My Boolean : ", HasClass, nl);
+end DemoVars;
